@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Meeting Invitation</title>
+</head>
+
+<body style="margin:0; padding:0; background-color:#f3f4f6; font-family: Arial, Helvetica, sans-serif;">
+  <div style="max-width:620px; margin:40px auto; background:#ffffff; padding:32px; border-radius:10px; box-shadow:0 8px 24px rgba(0,0,0,0.08);">
+    
+    <!-- Header -->
+    <h2 style="margin-top:0; color:#111827;">Meeting Invitation</h2>
+
+    <!-- Greeting -->
+    <p style="font-size:16px; color:#374151;">
+      Hello <strong>${clientName}</strong>,
+    </p>
+
+    <!-- Body -->
+    <p style="font-size:15px; color:#4b5563; line-height:1.6;">
+      You have been invited to attend a scheduled meeting. Please use the button below to join the meeting at the scheduled time.
+    </p>
+
+    <!-- CTA Button -->
+    <div style="text-align:center; margin:28px 0;">
+      <a href="${meetUrl}" target="_blank"
+         style="display:inline-block; padding:14px 26px; background-color:#2563eb; color:#ffffff; text-decoration:none; border-radius:6px; font-size:16px; font-weight:600;">
+        Join Google Meet
+      </a>
+    </div>
+
+    <!-- Fallback Link -->
+    <p style="font-size:14px; color:#6b7280;">
+      If the button above does not work, copy and paste the following link into your browser:
+    </p>
+
+    <p style="word-break:break-all; font-size:14px;">
+      <a href="${meetUrl}" target="_blank" style="color:#2563eb;">
+        ${meetUrl}
+      </a>
+    </p>
+
+    <!-- Optional Landing Page -->
+    <p style="font-size:14px; color:#6b7280;">
+      You may also visit the meeting page:
+      <a href="${organiserLinkFallback}" target="_blank" style="color:#2563eb;">
+        ${organiserLinkFallback}
+      </a>
+    </p>
+
+    <!-- Footer -->
+    <hr style="margin:32px 0; border:none; border-top:1px solid #e5e7eb;">
+
+    <p style="font-size:13px; color:#9ca3af;">
+      This meeting was scheduled using an automated meeting system.
+    </p>
+
+    <p style="font-size:14px; color:#374151; margin-bottom:0;">
+      Best regards,<br>
+      <strong>MeetSync Team</strong>
+    </p>
+
+  </div>
+</body>
+</html>
